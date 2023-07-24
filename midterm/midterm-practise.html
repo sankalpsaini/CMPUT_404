@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html> <head> <script>
+function run ( which ) {
+    var which = this;
+    return (which) => {
+        document . getElementById ( which ). innerText = " Eaten ! " ;
+    }
+}
+</script> </head>
+<body>
+<ul> <li id = "a" > Cheese </li> <li id = "b"> Pepperoni </li> <li id = "c"> Hawaiian </li>
+</ul> <button type = "button" onclick = "(run('a'))('c')">Run </button>
+</body> </html>
